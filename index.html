@@ -3,42 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umesh Linga - Personal Website</title>
+    <title>Umesh Linga - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            background: #121212;
+            color: white;
             text-align: center;
-            background-color: #f4f4f4;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 50px auto;
             padding: 20px;
-            background: rgb(170, 69, 69);
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            background: #1E1E1E;
             border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
         }
         h1 {
-            color: #333;
+            font-size: 2.5em;
+            font-weight: 600;
         }
         p {
-            color: #555;
+            font-size: 1.2em;
+            color: #aaa;
+        }
+        .projects {
+            margin-top: 30px;
+        }
+        .project {
+            background: #333;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
         }
         .contact {
-            margin-top: 20px;
-            font-size: 18px;
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background: #ff4a57;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ff2a3a;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Umesh Linga</h1>
-        <p>Welcome to my personal website. Here you can find information about me and my work.</p>
+        <p>Bioinformatics Enthusiast | Data Analyst | Researcher</p>
+        
+        <div class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>🧬 Machine Learning & Genomics</h3>
+                <p>AMR analysis of NDM-1 gene using sequence alignment and protein sequence analysis for functional domains.</p>
+            </div>
+            <div class="project">
+                <h3>🦠 Gene Expression & Epidemiology</h3>
+                <p>Microarray analysis for hepatic carcinoma gene expression and risk factor modeling for lung cancer.</p>
+            </div>
+            <div class="project">
+                <h3>📱 SafePaths App Development</h3>
+                <p>Developed a mobile app proposal for real-time pathogen tracking and epidemiological analysis.</p>
+            </div>
+        </div>
+        
         <div class="contact">
-            <p><strong>Contact Me:</strong></p>
-            <p>Email: <a href="mailto:umeshlinga6@gmail.com">umeshlinga6@gmail.com</a></p>
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:umeshlinga6@gmail.com" style="color: #ff4a57;">umeshlinga6@gmail.com</a></p>
+            <a href="https://www.linkedin.com/in/umesh-linga-aa8321293" class="btn">LinkedIn</a>
+            <a href="https://github.com/yourgithub" class="btn">GitHub</a>
+            <a href="#" class="btn">Download Resume</a>
         </div>
     </div>
 </body>
